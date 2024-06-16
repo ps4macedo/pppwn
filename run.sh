@@ -262,7 +262,7 @@ do
 
  	echo -e "\033[91mFALHA!\033[0m" | sudo tee /dev/tty1
  	echo -e "$MENSAGEM" | sudo tee /dev/tty1
- 	echo -e "\033[93m\n\nVamos para a tentativa \033[1m\033[96m$attempt...\033[0m\n" | sudo tee /dev/tty1
+ 	echo -e "\033[93m\nVamos para a tentativa \033[1m\033[96m$attempt...\033[0m\n" | sudo tee /dev/tty1
 	((attempt++))
 	
  elif [[ $stdo  == *"Unsupported firmware version"* ]] ; then
